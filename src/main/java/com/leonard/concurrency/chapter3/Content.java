@@ -29,7 +29,7 @@ public class Content {
         new ThreadPoolExecutor.DiscardOldestPolicy();
 
         /**
-         * 策略3：直接丢弃任务 无感知
+         * 策略3：直接丢弃任务 无感知√√
          * 缺点：丢失任务数据
          */
         new ThreadPoolExecutor.DiscardPolicy();
