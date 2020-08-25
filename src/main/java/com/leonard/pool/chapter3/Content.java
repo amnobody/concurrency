@@ -1,4 +1,4 @@
-package com.leonard.concurrency.chapter3;
+package com.leonard.pool.chapter3;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;

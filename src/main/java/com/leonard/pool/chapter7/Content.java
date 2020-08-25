@@ -1,4 +1,4 @@
-package com.leonard.concurrency.chapter7;
+package com.leonard.pool.chapter7;
 
 import java.util.concurrent.ThreadPoolExecutor;
 
