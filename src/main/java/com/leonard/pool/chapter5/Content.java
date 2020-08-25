@@ -1,4 +1,4 @@
-package com.leonard.concurrency.chapter5;
+package com.leonard.pool.chapter5;
 
 import java.util.concurrent.DelayQueue;
 import java.util.concurrent.ScheduledThreadPoolExecutor;

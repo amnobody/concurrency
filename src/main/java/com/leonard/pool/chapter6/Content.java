@@ -1,4 +1,4 @@
-package com.leonard.concurrency.chapter6;
+package com.leonard.pool.chapter6;
 
 import java.util.concurrent.SynchronousQueue;
 

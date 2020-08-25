@@ -1,4 +1,4 @@
-package com.leonard.concurrency.chapter1;
+package com.leonard.pool.chapter1;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
