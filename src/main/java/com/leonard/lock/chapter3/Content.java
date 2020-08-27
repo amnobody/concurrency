@@ -5,10 +5,21 @@ import java.util.List;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @author ChenJiWei
- * @version V1.0
- * @Description 公平锁和非公平锁
- * @date 2020/08/27
+ * DESC: synchronized背后的monitor锁
+ *
+ * 通过javap -verbose xxx.class 反汇编查询synchronized作用
+ * 1.synchronized修饰对象
+ *  可以看到有monitor enter 两个monitor exit
+ * 线程执行三种情况：
+ *  - 遇到monitor锁计数为0 则持有锁并将计数器+1
+ *  - 遇到monitor锁计数非0 如果获取锁的线程就是持有monitor锁的线程 则计数器继续递增
+ *  - 遇到monitor锁计数非0 如果获取锁的线程是其他线程 则阻塞等待monitor释放
+ *
+ * 2.synchronized修饰方法
+ * acc_synchronize标志 如果线程发现修饰标志则会尝试获取monitor锁。其他情况类似synchronized修饰对象
+ *
+ * @author JiWei.Chen
+ * @date 2020/08/26
  */
 public class Content {
 
